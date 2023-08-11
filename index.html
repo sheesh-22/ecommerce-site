@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<script src="https://kit.fontawesome.com/2bac417314.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <a href="index.html" class="logo">CNG Store</a>
+            
+            <div class="header">		
+                <div class="container">
+                    <div class="navbar">                        
+                            <nav>
+                                <ul id="menuitem">
+                                    <li><a href="account.html"><i class="fa-regular fa-user"></i></a></li>
+                                    <li><a href="about.html">درباره ما</a></li>
+                                    <li><a href="contact.html">ارتباط با ما</a></li>                                    
+                                    <li><a href="index.html">خانه</a></li>                                    
+                                </ul>
+                            </nav>     
+                            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">                   
+                        </div>
+            <!--Cart Icon-->
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">سبد خرید شما</h2>
+                <!--Content-->
+                <div class="cart-content">
+                    
+                </div>
+                <!--Total-->
+                <div class="total">                    
+                    <div class="total-price">0 تومان</div>
+                    <div class="total-title">:مجموع</div>
+                </div>
+                <!--Buy Button-->
+                <b><button type="button" class="btn-buy">پرداخت</button></b>
+                <!--Close Cart-->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--Product-->
+    <section class="shop container">
+        <h2 class="section-title">محصولات ما</h2>
+        <!--Shop Content-->
+        <div class="shop-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="images/prd1.jpg" class="product-img">
+
+                <h2 class="product-title">ریل ماتریکس مزدا شرکتی</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+        <!------------Box 2------------>
+            <div class="product-box">
+                <img src="images/prd2.jpg" class="product-img">
+
+                <h2 class="product-title">ریل کروز همراه مپ کارتن عظام</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+            <!------------Box 3------------>
+            <div class="product-box">
+                <img src="images/prd3.jpg" class="product-img">
+
+                <h2 class="product-title">کلید تبدیل گازسوز داشبوردی سمند</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+            <!------------Box 4------------>
+            <div class="product-box">
+                <img src="images/prd4.jpg" class="product-img">
+
+                <h2 class="product-title">کلید تبدیل پراید شرکتی طرح قدیم</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+            <!------------Box 5------------>
+            <div class="product-box">
+                <img src="images/prd5.jpg" class="product-img">
+
+                <h2 class="product-title">کلید تبدیل پیکان وانت شرکتی طرح قدیم</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+            <!------------Box 6------------>
+            <div class="product-box">
+                <img src="images/prd6.jpg" class="product-img">
+
+                <h2 class="product-title">کلید تبدیل وانت طرح جدید</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+            <!------------Box 7------------>
+            <div class="product-box">
+                <img src="images/prd7.jpg" class="product-img">
+
+                <h2 class="product-title">مهره پیزو پژو</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+            <!------------Box 8------------>
+            <div class="product-box">
+                <img src="images/prd8.jpg" class="product-img">
+
+                <h2 class="product-title">شیرداخل موتور صلیبی پژو</h2>
+                <span class="price">100تومان</span>
+                <i class='bx bx-cart-add add-cart'></i>
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+		
+		var menuitem = document.getElementById('menuitem')
+
+		menuitem.style.maxHeight = '0px';
+
+		function menutoggle(){
+			if (menuitem.style.maxHeight == '0px') {
+				menuitem.style.maxHeight = '200px'
+			}
+			else{
+				menuitem.style.maxHeight = '0px'
+			}
+		}
+
+	</script>
+    <!-- Link to js -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNG - Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<script src="https://kit.fontawesome.com/2bac417314.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="nav container">
+            <a href="#" class="logo"></a>
+        </div>
+         <div class="header">		
+                <div class="container">
+                    <div class="navbar">                        
+                            <nav class="nav2">
+                                <ul id="menuitem">
+                                    <li><a href="account.html"><i class="fa-regular fa-user"></i></a></li>
+                                    <li><a href="about.html">درباره ما</a></li>
+                                    <li><a href="contact.html">ارتباط با ما</a></li>                                    
+                                    <li><a href="index.html">خانه</a></li>                                    
+                                </ul>
+                            </nav>         
+                        </div>
+                    </div>
+                </div>
+                <div class="side-nav">                    
+                    <a href="#">CNG <br> STORE</a>
+                </div>
+<!--account page-->
+
+<div class="col-2">
+    <div class="form-container">
+        <div class="form-btn">
+            <span onclick="login()">ورود</span>
+            <span onclick="signup()">ثبت نام</span>
+            <hr id="Indicator">
+        </div>
+
+        <form id="LoginForm">
+            <input type="text" placeholder="نام کاربری" style="text-align: right;">
+            <input type="password" placeholder="گذرواژه" style="text-align: right;">
+            <button type="submit" class="btn">ورود</button>
+            <a href="">فراموشی گذرواژه</a>
+        </form>
+
+        <form id="SignupForm">
+            <input type="text" placeholder="نام کاربری" style="text-align: right;">
+            <input type="email" placeholder="ایمیل" style="text-align: right;">
+            <input type="password" placeholder="گذرواژه" style="text-align: right;">
+            <button type="submit" class="btn">ثبت نام</button>							
+        </form>
+    </div>
+</div>
+    
+    
+    
+<script type="text/javascript">
+    var LoginForm = document.getElementById("LoginForm");
+    var SignupForm = document.getElementById("SignupForm");
+    var Indicator  = document.getElementById("Indicator");
+
+
+    function signup(){
+
+        SignupForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login(){
+
+        SignupForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+
+
+</body>
+</html>
